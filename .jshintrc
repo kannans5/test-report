@@ -1,8 +1,10 @@
 {
   "predef": [
+    "server",
     "document",
     "window",
-    "-Promise"
+    "-Promise",
+    "moment"
   ],
   "browser": true,
   "boss": true,
@@ -28,5 +30,6 @@
   "white": false,
   "eqnull": true,
   "esversion": 6,
-  "unused": true
+  "unused": true,
+  "moment": true
 }

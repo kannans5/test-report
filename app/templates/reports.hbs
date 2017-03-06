@@ -1,0 +1,20 @@
+<h4 class="center-align">This is the Test Reports route</h4>
+
+<table class="container">
+  <tr>
+    <td>Test Run Date</td>
+    <td>Total Tests</td>
+    <td>Tests Passed</td>
+    <td>Tests Failed</td>
+    <td>Details</td>
+  </tr>
+  {{#each model as |report|}}
+    <tr>
+      <td><h7>{{moment report.date 'LL'}}</h7></td>
+      <td><h6>{{report.tests}}</h6></td>
+      <td><h6>{{report.passed}}</h6></td>
+      <td><h6>{{report.failed}}</h6></td>
+      <td><p>{{report.details}}</p></td>
+    </tr>
+  {{/each}}
+</table>

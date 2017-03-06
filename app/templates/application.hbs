@@ -1,5 +1,11 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="jumbotron text-center">
+  <h2 id="title">{{#link-to 'application'}}Test Reports{{/link-to}}</h2>
+  {{#link-to 'reports'}}<button class="btn btn-primary">All Reports</button>{{/link-to}}
+  {{#link-to 'reports.new'}}<button class="btn btn-primary">Add new report</button>{{/link-to}}
+</div>
 
-{{outlet}}
+<!-- {{#link-to 'reports'}}Reports{{/link-to}} -->
+
+<div class="container">
+ {{outlet}}
+</div>
