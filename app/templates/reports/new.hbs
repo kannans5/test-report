@@ -1,1 +1,25 @@
-{{outlet}}
+<h4 id="newReport" class="container center_div">New Report</h4>
+<br>
+<form class="container center_div">
+  <div class="form-group">
+    <label for="dateInput">Test Run Date</label>
+    {{input value=date placeholder="Date" class="form-control" id="dateInput"}}
+  </div>
+  <div class="form-group">
+    <label for="testsInput">Total Tests</label>
+    {{input value=tests placeholder="Total Tests" class="form-control" id="testsInput"}}
+  </div>
+  <div class="form-group">
+    <label for="passedInput">Passed Tests</label>
+    {{input value=passed placeholder="Passed Tests" class="form-control" id="passedInput"}}
+  </div>
+  <div class="form-group">
+    <label for="failedInput">Failed Tests</label>
+    {{input value=failed placeholder="Failed Tests" class="form-control" id="failedInput"}}
+  </div>
+  <div class="form-group">
+    <label for="detailsInput">Test Details</label>
+    {{input value=details placeholder="Test  Details" class="form-control" id="detailsInput"}}
+  </div>
+  <button {{action "addReport"}} class="btn btn-default">Add</button>
+</form>
