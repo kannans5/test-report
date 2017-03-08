@@ -3,7 +3,8 @@
   "dependencies": {
     "materialize": "0.97.7",
     "hammer.js": "2.0.6",
-    "hammer-time": "^1.1.0"
+    "hammer-time": "^1.1.0",
+    "flatpickr": "git://github.com/chmln/flatpickr#^2.4.4"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7"
