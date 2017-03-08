@@ -1,10 +1,9 @@
 import Model from 'ember-data/model';
-import attr from 'ember-data/attr';
 
 export default Model.extend({
-  date: attr('string'),
-  tests: attr('number'),
-  passed: attr('number'),
-  failed: attr('number'),
-  details: attr('string')
+  date: DS.attr('string'),
+  tests: DS.attr('number'),
+  passed: DS.attr('number'),
+  failed: DS.attr('number'),
+  details: DS.attr('string')
 });
