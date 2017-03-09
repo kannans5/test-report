@@ -2,6 +2,9 @@
 
 module.exports = function(environment) {
   var ENV = {
+    torii: {
+      sessionServiceName: 'session'
+    },
     firebase: {
       apiKey: "AIzaSyDW0G3fBLZnxFsrA6xs-0_2Pj8oVBw-qVA",
       authDomain: "test-report-4b745.firebaseapp.com",

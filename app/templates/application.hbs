@@ -1,6 +1,22 @@
-<div class="jumbotron text-center">
-  <h2 id="title">{{#link-to 'application'}}Test Reports{{/link-to}}</h2>
-  {{#link-to 'reports'}}<button class="btn btn-primary">All Reports</button>{{/link-to}}
-  {{#link-to 'reports.new'}}<button class="btn btn-primary">Add new report</button>{{/link-to}}
-</div>
-{{outlet}}
+{{#if session.isAuthenticated}}
+  Logged in as {{session.currentUser.displayName}}
+  <button {{action "signOut"}}>Sign out</button>
+  {{outlet}}
+{{else}}
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4 col-md-offset-7">
+              <div class="panel panel-default">
+                  <div class="panel-heading"> <strong class="">Login</strong>
+
+                  </div>
+                  <div class="panel-body">
+                      <form class="form-horizontal" role="form">
+                          <button {{action "signIn" "google"}}>Sign in with Google</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+{{/if}}
