@@ -18,6 +18,13 @@
     {{input value=failed placeholder="Failed Tests" class="form-control" id="failedInput"}}
   </div>
   <div class="form-group">
+    <label for="intermittentInput">Intermittent Failure</label>
+    <select name="intermittent" class="form-control" onchange={{action "updateValue" value="target.value"}}>
+      <option value="Y">Yes</option>
+      <option value="N">No</option>
+    </select>
+  </div>
+  <div class="form-group">
     <label for="detailsInput">Test Details</label>
     {{input value=details placeholder="Test  Details" class="form-control" id="detailsInput"}}
   </div>

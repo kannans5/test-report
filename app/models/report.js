@@ -6,5 +6,6 @@ export default Model.extend({
   tests: DS.attr('number'),
   passed: DS.attr('number'),
   failed: DS.attr('number'),
+  intermittent: DS.attr('string'),
   details: DS.attr('string')
 });
