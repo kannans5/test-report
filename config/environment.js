@@ -6,7 +6,7 @@ module.exports = function(environment) {
       sessionServiceName: 'session'
     },
     firebase: {
-      apiKey: "AIzaSyDW0G3fBLZnxFsrA6xs-0_2Pj8oVBw-qVA",
+      apiKey: process.env.FB_API_KEY,
       authDomain: "test-report-4b745.firebaseapp.com",
       databaseURL: "https://test-report-4b745.firebaseio.com",
       storageBucket: "test-report-4b745.appspot.com",

@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  select_box_value: 'Y',
+  select_box_value: 'N',
   actions: {
     updateValue: function(value) {
       console.log(value);
